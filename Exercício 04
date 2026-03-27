@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int A[3] = {10, 4, 5};
+    int B[3] = {10, 6, 9};
+
+    int pontosA = 0;
+    int pontosB = 0;
+
+    for (int i = 0; i < 3; i++) {
+        if (A[i] > B[i]) {
+            pontosA++;
+        } else if (B[i] > A[i]) {
+            pontosB++;
+        }
+    }
+
+    printf("Pontuação do Funcionário A: %d\n", pontosA);
+    printf("Pontuação do Funcionário B: %d\n", pontosB);
+
+    return 0;
+}
